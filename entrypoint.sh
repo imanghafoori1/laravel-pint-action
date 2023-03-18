@@ -16,6 +16,10 @@ if [[ "${INPUT_TESTMODE}" == true ]]; then
   pint_command+=" --test"
 fi
 
+if [[ "${INPUT_DIRTYMODE}" == true ]]; then
+  pint_command+=" --dirty"
+fi
+
 if [[ "${INPUT_VERBOSEMODE}" == true ]]; then
   pint_command+=" -v"
 fi
